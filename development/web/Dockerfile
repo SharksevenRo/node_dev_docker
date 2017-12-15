@@ -2,7 +2,10 @@ FROM mhart/alpine-node:6.12.2
 
 MAINTAINER xiongmao 'xiongmao@huanleguang.com'
 
-RUN apk --update add git curl vim bash
+RUN apk --update add git curl vim bash uesradd
+
+RUN mkdir -p /www/workspace
+
 
 RUN npm install -g cnpm --registry=https://registry.npm.taobao.org
 
