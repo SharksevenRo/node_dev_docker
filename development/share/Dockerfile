@@ -2,5 +2,5 @@ FROM node:development
 RUN mkdir - p /root/workspace
 WORKDIR /root/workspace
 
-ENTRYPOINT ["echo"]
+ENTRYPOINT ["echo", "entrypoint"]
 CMD ["defaultvalue"]
